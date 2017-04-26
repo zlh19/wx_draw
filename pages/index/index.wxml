@@ -1,0 +1,8 @@
+<view class="body">
+  <view class="nav">
+    <view class="nav-item current">写字</view>
+    <view class="nav-item">画画</view>
+    <view class="nav-item">其他</view>
+  </view>
+  <canvas canvas-id="canvas" class="canvas" bindtouchstart="touchStartFun" bindtouchend="touchEndFun" bindtouchmove="touchMoveFun" disable-scroll="false"></canvas>
+</view>
