@@ -19,6 +19,18 @@ Page({
         // that.getCodeMessageFun();
 
   },
+    bindCodeTap() {
+        var that = this;
+        wx.scanCode({
+            success: (res) => {
+                console.log(res)
+                    //更新数据
+                that.setData({
+                    codeInfor: res
+                })
+            }
+        })
+    },
   //手指触摸动作开始
   touchStart: function (e) {
       //得到触摸点的坐标

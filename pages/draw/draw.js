@@ -21,7 +21,7 @@ Page({
     },
     navOtherTap() {
         wx.navigateTo({
-            url: '../other/other'
+            url: '../todos/todos'
         })
     },
     canvasIdErrorCallback: function(e) {
