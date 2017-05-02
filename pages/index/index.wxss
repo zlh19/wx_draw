@@ -22,5 +22,14 @@
 .canvas{
   width:750rpx;
   height:750rpx;
+}
+
+.canvas-bg{
   margin-top:40rpx;
+}
+
+.canvas-draw{
+	position:absolute;
+	left:0;
+	top:76rpx;
 }

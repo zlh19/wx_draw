@@ -1,3 +1,14 @@
 <view class="body">
- 
+  <view class="nav">
+    <view class="nav-item" bindtap="navWriteTap">写字</view>
+    <view class="nav-item" bindtap="navDrawTap">画画</view>
+    <view class="nav-item current" bindtap="navOtherTap">其他</view>
+  </view>
+  <view class="main">
+  	<button bindtap="chooseImage">选择图片</button>
+  	<button bindtap="uploadImage">上传图片</button>
+  	<view class="content">
+  		<image src="{{selectImageSrc}}"></image> 
+  	</view>
+  </view>
 </view>
