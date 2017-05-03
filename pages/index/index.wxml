@@ -8,4 +8,26 @@
   <canvas canvas-id="canvasBg" class="canvas canvas-bg" disable-scroll="false"></canvas>
   <canvas canvas-id="canvas" class="canvas canvas-draw" bindtouchstart="touchStartFun" bindtouchend="touchEndFun" bindtouchmove="touchMoveFun" disable-scroll="false"></canvas>
   <button class="" bindtap="clearTapFun">清空</button>
+  <!-- 颜色 -->
+  <view class="color-list">
+  	<radio-group class="radio-group" bindchange="lineColorChangeFun">
+  	  <view class="radio" wx:for="{{canvasInfor.colorItem}}">
+		  <label>
+		    <radio value="{{item.value}}" checked="{{item.isChecked}}"/>{{item.name}}
+		  </label>
+	  </view>
+	</radio-group>
+  </view>
+  <!-- 笔画 -->
+  <view class="color-list">
+  	<radio-group class="radio-group" bindchange="lineWeightChangeFun">
+  	  <view class="radio" wx:for="{{canvasInfor.lineItem}}">
+		  <label>
+		    <radio value="{{item.value}}" checked="{{item.isChecked}}"/>{{item.name}}
+		  </label>
+	  </view>
+	</radio-group>
+  </view>
+  <!-- <button class="" bindtap="clearTapFun">后退</button>
+  <button class="" bindtap="clearTapFun">前进</button> -->
 </view>

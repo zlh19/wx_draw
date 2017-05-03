@@ -6,9 +6,18 @@
   </view>
   <view class="main">
   	<button bindtap="chooseImage">选择图片</button>
-  	<button bindtap="uploadImage">上传图片</button>
+  	<button bindtap="uploadImage">读取信息</button>
   	<view class="content">
   		<image src="{{selectImageSrc}}"></image> 
   	</view>
+    <view>地址：{{outFileInfor.address}}</view>
+    <view>资金：{{outFileInfor.capital}}</view>
+    <view>公司：{{outFileInfor.config_str}}</view>
+    <view>公司：{{outFileInfor.name}}</view>
+    <view>姓名：{{outFileInfor.person}}</view>
+    <view>资金：{{outFileInfor.reg_num}}</view>
+    <view>{{outFileInfor.request_id}}</view>
+    <view>状态：{{outFileInfor.success}}</view>
+    <view>{{outFileInfor.valid_period}}</view>
   </view>
 </view>

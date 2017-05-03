@@ -33,3 +33,7 @@
 	left:0;
 	top:76rpx;
 }
+
+/*颜色选择*/
+.radio-group{display:flex;padding:30rpx 0;}
+.radio{flex:1;text-align:center;}
